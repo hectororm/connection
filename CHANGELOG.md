@@ -6,6 +6,10 @@ use [Keep a Changelog] (http://keepachangelog.com/).
 
 ## [1.0.0-beta2] - In progress
 
+### Changed
+
+- Add type of log (connection or query)
+
 ### Removed
 
 - @package attributes from PhpDoc

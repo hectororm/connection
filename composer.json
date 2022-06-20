@@ -1,7 +1,8 @@
 {
   "name": "hectororm/connection",
   "description": "Hector Connection",
-  "minimum-stability": "stable",
+  "minimum-stability": "beta",
+  "prefer-stable": true,
   "license": "MIT",
   "homepage": "https://gethectororm.com",
   "authors": [
@@ -22,7 +23,8 @@
   },
   "require": {
     "php": "^8.0",
-    "ext-pdo": "*"
+    "ext-pdo": "*",
+    "berlioz/helpers": "^1.6"
   },
   "require-dev": {
     "ext-pdo_sqlite": "*",

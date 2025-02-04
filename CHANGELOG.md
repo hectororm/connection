@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file. This projec
 to [Semantic Versioning] (http://semver.org/). For change log format,
 use [Keep a Changelog] (http://keepachangelog.com/).
 
+## [1.0.0-beta8] - 2025-02-04
+
+### Added
+
+- `DriverInfo` class
+- `Connection::getDriverInfo(): DriverInfo` method to retrieve infos from connection
+- `Connection::fromPdo(): Connection` method to create connection from PDO object
+
+### Changed
+
+- Exclude logger from serialization of `Connection`
+
+### Deprecated
+
+- `Connection::getDriverName(): string`
+
 ## [1.0.0-beta7] - 2024-09-25
 
 ### Changed

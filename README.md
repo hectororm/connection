@@ -135,6 +135,26 @@ $lastInsertId = $connection->getLastInsertId();
 If you begin a new transaction even though a transaction has already started, the new transaction will be ignored, and
 it needed to call even times the `commit` or `rollBack` methods.
 
+
+### Driver info
+
+You can retrieve driver infos from connection: `Connection::getDriverInfo(): DriverInfo`.
+
+The `DriverInfo` class:
+
+- `DriverInfo::getDriver(): string`: return the driver name
+- `DriverInfo::getVersion(): string`: return the driver version
+- `DriverInfo::getCapabilities(): DriverCapabilities`: return the driver capabilities
+
+The `DriverCapabilities` interface:
+
+- `DriverCapabilities::hasLock(): bool`: Support of lock?
+- `DriverCapabilities::hasLockAndSkip(): bool`: Support of lock and skip locked?
+- `DriverCapabilities::hasWindowFunctions(): bool`: Support of window functions?
+- `DriverCapabilities::hasJson(): bool`: Support of JSON?
+- `DriverCapabilities::hasStrictMode(): bool`: Has strict mode?
+
+
 ### Connection set
 
 You can create a set of `Connection` objects with `ConnectionSet` class.

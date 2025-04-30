@@ -1,8 +1,7 @@
 {
   "name": "hectororm/connection",
   "description": "Hector Connection",
-  "minimum-stability": "beta",
-  "prefer-stable": true,
+  "minimum-stability": "stable",
   "license": "MIT",
   "homepage": "https://gethectororm.com",
   "authors": [
